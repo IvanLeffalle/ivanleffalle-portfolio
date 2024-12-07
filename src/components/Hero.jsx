@@ -54,7 +54,7 @@ export const Hero = () => {
                             transition={{ duration: 1, delay: 0.5 }}
                             className="text-gray-200 md:text-3xl text-lg tracking-tight mb-4 mr-4"
                         >
-                            <ul className="flex flex-col gap-5 ">
+                            <ul className="flex flex-col md:gap-5 gap-2 ">
                                 <li>
                                     Developer
                                 </li>
