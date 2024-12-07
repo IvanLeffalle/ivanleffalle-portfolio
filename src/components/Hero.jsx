@@ -52,7 +52,7 @@ export const Hero = () => {
                             whileInView={{ opacity: 1 }}
                             viewport={{ once: true }}
                             transition={{ duration: 1, delay: 0.5 }}
-                            className="text-gray-200 md:text-3xl text-2xl tracking-tight mb-4 mr-4"
+                            className="text-gray-200 md:text-3xl text-lg tracking-tight mb-4 mr-4"
                         >
                             <ul className="flex flex-col gap-5 ">
                                 <li>
@@ -82,7 +82,7 @@ export const Hero = () => {
                                 whileInView={{ opacity: 1 }}
                                 viewport={{ once: true }}
                                 transition={{ duration: 1, delay: 1 }}
-                                className="text-gray-300 md:leading-10 max-w-[300px] md:max-w-[500px] md:text-2xl text-lg mb-6  "
+                                className="text-gray-300 md:leading-10 max-w-[300px] md:max-w-[500px] md:text-2xl text-sm mb-6  "
                             >
                                 Dedicated full-stack developer with a strong foundation in building dynamic, user-friendly applications.                            </motion.p>
                             <motion.div
@@ -90,7 +90,7 @@ export const Hero = () => {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ duration: 1, delay: 1.5 }}
-                                className="flex flex-row items-center gap-6 my-4 md:mb-0 "
+                                className="flex flex-row items-center gap-4 md:gap-6 my-4 md:mb-0 "
                             >
                                 <a
                                     href="/ivan-leffalle-cv.pdf"
@@ -100,14 +100,14 @@ export const Hero = () => {
                                 >
                                     <motion.button
                                         whileHover={{ scale: 1.05, boxShadow: "0px 0px 8px rgba(0, 0, 0, 0.3)" }}
-                                        className="z-10 cursor-pointer font-bold text-customAccent md:w-auto p-4 border border-customAccent rounded-xl"
+                                        className="z-10 cursor-pointer font-bold text-customAccent md:text-[16px] text-[08px] md:w-auto p-2 md-p-4 border border-customAccent rounded-xl"
                                     >
                                         Download CV
                                     </motion.button>
                                 </a>
 
 
-                                <div className="flex gap-6 flex-row text-4xl md:text-6xl text-customAccent z-20">
+                                <div className="flex md:gap-6 gap-4 flex-row text-xl md:text-6xl text-customAccent z-20">
                                     <motion.a whileHover={{ scale: 1.2 }} href="https://github.com/IvanLeffalle" className=" cursor-pointer">
                                         <AiOutlineGithub />
                                     </motion.a>

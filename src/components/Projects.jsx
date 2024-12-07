@@ -82,7 +82,7 @@ export const Projects = () => {
         {projects.map((project, index) => (
           <Reveal key={index}>
             <div
-              className={`flex flex-col md:min-h-[300px] md:w-auto w-[450px] justify-between bg-gray-800/40 transition duration-300 p-6 rounded-lg shadow-md`}
+              className={`flex flex-col md:min-h-[300px] md:w-auto w-[100%] justify-between bg-gray-800/40 transition duration-300 p-6 rounded-lg shadow-md`}
             >
               <h3 className="text-xl font-semibold text-gray-200 border-customAccent mb-4 pb-2 border-b-[1px]">
                 {project.title}
