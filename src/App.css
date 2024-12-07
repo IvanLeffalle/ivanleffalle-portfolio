@@ -1,0 +1,96 @@
+/* Glow Effect */
+.glow-effect {
+    box-shadow: 0 0 20px rgba(0, 255, 204, 0.7),
+        0 0 30px rgba(0, 255, 204, 0.7),
+        0 0 40px rgba(0, 255, 204, 0.7);
+}
+
+/* Marquee Animation */
+.marquee {
+    display: flex;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: marquee 20s linear infinite;
+    /* 20 seconds, adjustable */
+    z-index: 99999;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Body Styles */
+body {
+    background-image: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    color: white;
+    margin: 0;
+    height: 100vh;
+}
+
+.marquee h2 {
+    display: inline-block;
+    padding-left: 50px;
+}
+
+/* Button Glass Effect */
+.button-glass {
+    background: rgba(255, 255, 255, 0.2);
+    /* Transparent white */
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    /* Blur for glass effect */
+    -webkit-backdrop-filter: blur(5px);
+    /* For Safari support */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.button-glass:hover {
+    transform: scale(1.05);
+    /* Slight scaling on hover */
+    box-shadow: 0 6px 35px rgba(0, 0, 0, 0.2);
+    /* Increased shadow on hover */
+}
+
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .marquee h2 {
+        padding-left: 20px;
+        /* Less space for smaller screens */
+    }
+
+    .button-glass {
+        padding: 10px;
+        /* Less padding on smaller screens */
+        font-size: 14px;
+        /* Smaller font size */
+    }
+}
+
+@media (max-width: 480px) {
+    .marquee {
+        animation: marquee 15s linear infinite;
+        /* Speed up for smaller screens */
+    }
+
+    .button-glass {
+        padding: 8px;
+        /* Further reduce padding */
+        font-size: 12px;
+        /* Further reduce font size */
+    }
+}
