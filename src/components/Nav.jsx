@@ -32,7 +32,7 @@ export const Navbar = () => {
     }
 
     return (
-        <div className='fixed top-0 left-0 w-full bg-opacity-70 backdrop-blur-md z-10 px-[50px] max-w-[1200px]'>
+        <div className='fixed top-0 left-0 w-full bg-opacity-70 backdrop-blur-md z-10 px-[50px]'>
             <div className='mx-auto  flex justify-between text-gray-200 text-xl items-center px-12 h-20'>
                 <a href="#">
                     <img src={logo} alt="Logo" className="w-20 h-20" />
