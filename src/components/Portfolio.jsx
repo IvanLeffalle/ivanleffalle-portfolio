@@ -6,7 +6,6 @@ import {
   DiGithubBadge,
   DiWordpress,
   DiHtml5,
-  DiBootstrap,
   DiJavascript1,
   DiFirebase,
   DiCss3,
