@@ -21,7 +21,7 @@ const projects = [
   {
     img: project1,
     title: "Weather App",
-    description: "UI for frontend development using Html and Bootstrap.",
+    description: "UI for frontend development using Html Css, and Javascript.",
     links: {
       site: "https://ivanleffalle.github.io/wdd231/weather/index.html",
       github: "#",
