@@ -1,26 +1,43 @@
-import React, { useState } from 'react';
-import { DiNodejsSmall, DiMongodb, DiReact, DiGithubBadge, DiWordpress, DiHtml5, DiBootstrap, DiJavascript1, DiFirebase } from 'react-icons/di'; // Ensure these are installed
-import { AiOutlineGithub } from 'react-icons/ai';
-import Reveal from './Reveal';
-import project1 from '../assets/images/dentist.webp';
-import project2 from '../assets/images/alelivestidos.webp';
-import project3 from '../assets/images/TitheApp.webp';
-import project4 from '../assets/images/gruposapucai.webp';
+import React, { useState } from "react";
+import {
+  DiNodejsSmall,
+  DiMongodb,
+  DiReact,
+  DiGithubBadge,
+  DiWordpress,
+  DiHtml5,
+  DiBootstrap,
+  DiJavascript1,
+  DiFirebase,
+  DiCss3,
+} from "react-icons/di"; // Ensure these are installed
+import { AiOutlineGithub } from "react-icons/ai";
+import Reveal from "./Reveal";
+import project1 from "../assets/images/weather-app.webp";
+import project2 from "../assets/images/alelivestidos.webp";
+import project3 from "../assets/images/TitheApp.webp";
+import project4 from "../assets/images/gruposapucai.webp";
 
 const projects = [
   {
     img: project1,
-    title: "Family Dental Website",
+    title: "Weather App",
     description: "UI for frontend development using Html and Bootstrap.",
     links: {
-      site: "https://ivanleffalle.github.io/DrLeffalle.com.ar/",
+      site: "https://ivanleffalle.github.io/wdd231/weather/index.html",
       github: "#",
     },
     technologies: [
-      { name: 'Html5 ', icon: <DiHtml5 className='text-customAccent' /> },
-      { name: 'Bootstrap', icon: <DiBootstrap className='text-customAccent' /> },
-      { name: 'JavaScript', icon: <DiJavascript1 className='text-customAccent' /> },
-      { name: 'GitHub', icon: <DiGithubBadge className='text-customAccent' /> },
+      { name: "Html5 ", icon: <DiHtml5 className="text-customAccent" /> },
+      {
+        name: "CSS",
+        icon: <DiCss3 className="text-customAccent" />,
+      },
+      {
+        name: "JavaScript",
+        icon: <DiJavascript1 className="text-customAccent" />,
+      },
+      { name: "GitHub", icon: <DiGithubBadge className="text-customAccent" /> },
     ],
   },
   {
@@ -32,41 +49,50 @@ const projects = [
       github: "#",
     },
     technologies: [
-      { name: 'Node Js', icon: <DiNodejsSmall className='text-customAccent' /> },
-      { name: 'MongoDB', icon: <DiMongodb className='text-customAccent' /> },
-      { name: 'React', icon: <DiReact className='text-customAccent' /> },
-      { name: 'GitHub', icon: <DiGithubBadge className='text-customAccent' /> },
+      {
+        name: "Node Js",
+        icon: <DiNodejsSmall className="text-customAccent" />,
+      },
+      { name: "MongoDB", icon: <DiMongodb className="text-customAccent" /> },
+      { name: "React", icon: <DiReact className="text-customAccent" /> },
+      { name: "GitHub", icon: <DiGithubBadge className="text-customAccent" /> },
     ],
   },
   {
     img: project3,
     title: "Tithe App",
-    description: "React Native Android application developed with Expo to help users keep track of their sales.",
+    description:
+      "React Native Android application developed with Expo to help users keep track of their sales.",
     links: {
       site: "https://github.com/IvanLeffalle/tithe-app",
       github: "https://github.com/IvanLeffalle/tithe-app",
     },
     technologies: [
-      { name: 'Node Js', icon: <DiNodejsSmall className='text-customAccent' /> },
-      { name: 'Firebase', icon: <DiFirebase className='text-customAccent' /> },
-      { name: 'React-Native', icon: <DiReact className='text-customAccent' /> },
-      { name: 'GitHub', icon: <DiGithubBadge className='text-customAccent' /> },
+      {
+        name: "Node Js",
+        icon: <DiNodejsSmall className="text-customAccent" />,
+      },
+      { name: "Firebase", icon: <DiFirebase className="text-customAccent" /> },
+      { name: "React-Native", icon: <DiReact className="text-customAccent" /> },
+      { name: "GitHub", icon: <DiGithubBadge className="text-customAccent" /> },
     ],
   },
   {
     img: project4,
     title: "Grupo Sapucai - Website",
-    description: "A modern and visually appealing website crafted using Elementor in WordPress.",
+    description:
+      "A modern and visually appealing website crafted using Elementor in WordPress.",
     links: {
       site: "https://gruposapucai.com/",
       github: "#",
     },
     technologies: [
-      { name: 'Wordpress', icon: <DiWordpress className='text-customAccent' /> },
-
+      {
+        name: "Wordpress",
+        icon: <DiWordpress className="text-customAccent" />,
+      },
     ],
   },
-
 ];
 
 export const Portfolio = () => {
@@ -78,12 +104,14 @@ export const Portfolio = () => {
       {projects.map((project, index) => (
         <Reveal key={index}>
           <div
-            className={`flex flex-col md:flex-row hover:bg-gray-800/40  hover:rounded-lg transition duration-300 hover:border-customAccent hover:border-2 hover:border-opacity-50 ${index % 2 !== 0 ? 'md:flex-row-reverse' : ''
-              } mb-12`}
+            className={`flex flex-col md:flex-row hover:bg-gray-800/40  hover:rounded-lg transition duration-300 hover:border-customAccent hover:border-2 hover:border-opacity-50 ${
+              index % 2 !== 0 ? "md:flex-row-reverse" : ""
+            } mb-12`}
             onMouseEnter={() => setHoveredIndex(index)}
             onMouseLeave={() => setHoveredIndex(null)}
             style={{
-              opacity: hoveredIndex !== null && hoveredIndex !== index ? 0.5 : 1, // Dim others
+              opacity:
+                hoveredIndex !== null && hoveredIndex !== index ? 0.5 : 1, // Dim others
             }}
           >
             <div className="w-full md:w-1/2 p-4">
@@ -102,7 +130,9 @@ export const Portfolio = () => {
                 {project.technologies.map((tech, idx) => (
                   <div key={idx} className="flex items-center space-x-2">
                     <span className="text-2xl">{tech.icon}</span>
-                    <span className='text-gray-200 text-[13px]'>{tech.name}</span>
+                    <span className="text-gray-200 text-[13px]">
+                      {tech.name}
+                    </span>
                   </div>
                 ))}
               </div>
