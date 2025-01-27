@@ -58,6 +58,26 @@ const projects = [
     ],
   },
   {
+    title: "Weather App",
+    description: "UI for frontend development using Html Css, and Javascript.",
+    links: {
+      site: "https://ivanleffalle.github.io/wdd231/weather/index.html",
+      github: "https://ivanleffalle.github.io/wdd231/weather/index.html",
+    },
+    technologies: [
+      { name: "Html5 ", icon: <DiHtml5 className="text-customAccent" /> },
+      {
+        name: "CSS",
+        icon: <DiCss3 className="text-customAccent" />,
+      },
+      {
+        name: "JavaScript",
+        icon: <DiJavascript1 className="text-customAccent" />,
+      },
+      { name: "GitHub", icon: <DiGithubBadge className="text-customAccent" /> },
+    ],
+  },
+  {
     title: "Scriptures App",
     description:
       "Demonstrated encapsulation principles in this CSE210 project.",

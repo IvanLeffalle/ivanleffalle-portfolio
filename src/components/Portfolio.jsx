@@ -12,22 +12,23 @@ import {
 } from "react-icons/di"; // Ensure these are installed
 import { AiOutlineGithub } from "react-icons/ai";
 import Reveal from "./Reveal";
-import project1 from "../assets/images/weather-app.webp";
+import project1 from "../assets/images/od-leffalle.png";
 import project2 from "../assets/images/alelivestidos.webp";
-import project3 from "../assets/images/TitheApp.webp";
-import project4 from "../assets/images/gruposapucai.webp";
+import project3 from "../assets/images/calendarturnos.png";
+import project4 from "../assets/images/TitheApp.webp";
 
 const projects = [
   {
     img: project1,
-    title: "Weather App",
-    description: "UI for frontend development using Html Css, and Javascript.",
+    title: "Od. Ivan Leffalle - Website",
+    description:
+      "Developed a modern and responsive dental practice website using React.js and Tailwind CSS, delivering an optimized user experience with clean, maintainable code and visually appealing design.",
     links: {
-      site: "https://ivanleffalle.github.io/wdd231/weather/index.html",
+      site: "https://drleffalle.com.ar",
       github: "#",
     },
     technologies: [
-      { name: "Html5 ", icon: <DiHtml5 className="text-customAccent" /> },
+      { name: "React", icon: <DiReact className="text-customAccent" /> },
       {
         name: "CSS",
         icon: <DiCss3 className="text-customAccent" />,
@@ -59,6 +60,25 @@ const projects = [
   },
   {
     img: project3,
+    title: "CalendAr Turnos",
+    description:
+      "Designed and developed an app enabling patients to book appointments directly integrated into my daily schedule. Built with React, Tailwind CSS, Node.js, Express, and MongoDB to ensure a seamless user experience and efficient data management.",
+    links: {
+      site: "https://citas-pi-two.vercel.app/",
+      github: "#",
+    },
+    technologies: [
+      {
+        name: "Node Js",
+        icon: <DiNodejsSmall className="text-customAccent" />,
+      },
+      { name: "MongoDB", icon: <DiMongodb className="text-customAccent" /> },
+      { name: "React-Native", icon: <DiReact className="text-customAccent" /> },
+      { name: "GitHub", icon: <DiGithubBadge className="text-customAccent" /> },
+    ],
+  },
+  {
+    img: project4,
     title: "Tithe App",
     description:
       "React Native Android application developed with Expo to help users keep track of their sales.",
@@ -74,22 +94,6 @@ const projects = [
       { name: "Firebase", icon: <DiFirebase className="text-customAccent" /> },
       { name: "React-Native", icon: <DiReact className="text-customAccent" /> },
       { name: "GitHub", icon: <DiGithubBadge className="text-customAccent" /> },
-    ],
-  },
-  {
-    img: project4,
-    title: "Grupo Sapucai - Website",
-    description:
-      "A modern and visually appealing website crafted using Elementor in WordPress.",
-    links: {
-      site: "https://gruposapucai.com/",
-      github: "#",
-    },
-    technologies: [
-      {
-        name: "Wordpress",
-        icon: <DiWordpress className="text-customAccent" />,
-      },
     ],
   },
 ];
