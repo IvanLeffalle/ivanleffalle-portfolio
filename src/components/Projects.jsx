@@ -46,15 +46,20 @@ const projects = [
     ],
   },
   {
-    title: "Journal App",
-    description: "CSE210 project showcasing abstraction concepts in C#.",
+    title: "GeneaHub",
+    description: "UI for frontend development using Vanilla JavaScript.",
     links: {
-      site: "#",
-      github:
-        "https://github.com/IvanLeffalle/cse210-projects/tree/main/prove/Develop02",
+      site: "https://geneahub.netlify.app/",
+      github: "https://github.com/IvanLeffalle/finalproject-wdd330",
     },
     technologies: [
-      { name: "C#", icon: <DiNodejsSmall className="text-customAccent" /> },
+      { name: "HTML5", icon: <DiHtml5 className="text-customAccent" /> },
+      { name: "CSS", icon: <DiCss3 className="text-customAccent" /> },
+      {
+        name: "JavaScript",
+        icon: <DiJavascript1 className="text-customAccent" />,
+      },
+      { name: "GitHub", icon: <DiGithubBadge className="text-customAccent" /> },
     ],
   },
   {
