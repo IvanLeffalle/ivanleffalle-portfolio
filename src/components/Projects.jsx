@@ -107,18 +107,6 @@ const projects = [
       { name: "C#", icon: <DiNodejsSmall className="text-customAccent" /> },
     ],
   },
-  {
-    title: "Goals App",
-    description: "Illustrated polymorphism in a goal-setting CSE210 project.",
-    links: {
-      site: "#",
-      github:
-        "https://github.com/IvanLeffalle/cse210-projects/tree/main/prove/Develop06",
-    },
-    technologies: [
-      { name: "C#", icon: <DiNodejsSmall className="text-customAccent" /> },
-    ],
-  },
 ];
 
 export const Projects = () => {
