@@ -84,7 +84,7 @@ export const Hero = () => {
                                 transition={{ duration: 1, delay: 1 }}
                                 className="text-gray-300 md:leading-10 max-w-[300px] md:max-w-[500px] md:text-2xl text-sm mb-6  "
                             >
-                                Dedicated full-stack developer with a strong foundation in building dynamic, user-friendly applications.                            </motion.p>
+                                Dedicated front-end developer with a strong foundation in building dynamic, user-friendly applications.                            </motion.p>
                             <motion.div
                                 initial={{ opacity: 0, y: 50 }}
                                 whileInView={{ opacity: 1, y: 0 }}
